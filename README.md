@@ -2,7 +2,7 @@
 
 A set of Node scripts written in Typescript to automate Defi actions.
 
-## manageLoan
+## LoanManager
 
 Helps maintain a healthy health factor on Aave's Polygon market with funds pooled in Curve's aToken pool. If the user's health factor dips below their desired health factor, the manager first checks if it can simply withdraw the aTokens from Curve to maximize MATIC farming (at least while that is still active). If folding the stablecoins into collateral isn't enough, the manager will repay as much as needed up to the total balance available in the Curve pool.
 
